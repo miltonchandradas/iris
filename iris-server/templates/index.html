@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block head %} Iris Dataset - Classifier{% endblock
+%} {% block body %}
+
+<div class="container">
+<h3>About Iris Dataset</h3>
+
+<p>
+  The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of
+  Multiple Measurements in Taxonomic Problems, and can also be found on the UCI
+  Machine Learning Repository.  It includes three iris species with 50 samples each as well as some properties
+  about each flower. One flower species is linearly separable from the other
+  two, but the other two are not linearly separable from each other.
+</p>
+<img src="../static/iris.png" height="250px"></img>
+
+<form action="/v2/predict" method="POST">
+  <label for="SepalLengthCm">Sepal length (cm) (Min: 4.3, Max: 7.9): </label>
+  <input type="text" name="SepalLengthCm" id="SepalLengthCm" value="5.1"></input><br>
+
+  <label for="SepalWidthCm">Sepal Width (cm) (Min: 2.0, Max: 4.1): </label>
+  <input type="text" name="SepalWidthCm" id="SepalWidthCm" value="3.5"></input><br>
+
+  <label for="PetalLengthCm">Petal Length (cm) (Min: 1.0, Max: 6.9): </label>
+  <input type="text" name="PetalLengthCm" id="PetalLengthCm" value="1.4"></input><br>
+
+  <label for="PetalWidthCm">Petal Width (cm) (Min: 0.1, Max: 2.5): </label>
+  <input type="text" name="PetalWidthCm" id="PetalWidthCm" value="0.2"></input><br>
+
+  <input type="submit" value="Make prediction" />
+</form>
+
+<h4>Your input values:</h4>
+<ul>
+<li>Sepal length (cm): {{ sepal_length }}</li>
+    <li>Sepal width (cm): {{ sepal_width }}</li>
+        <li>Petal length (cm): {{ petal_length }}</li>
+            <li>Petal width (cm): {{ petal_width }}</li>
+                <li>Predicted flower: <b>{{ flower }}</b></li>
+</ul>
+</div>
+
+{% endblock %}

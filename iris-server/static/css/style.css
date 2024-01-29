@@ -1,0 +1,83 @@
+/* Reset default margin and padding */
+body, h1, p, ul, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font family */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style headings */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style paragraphs */
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style unordered lists */
+ul {
+    color: #666;
+    margin-left: 25px; 
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Style form */
+form {
+    background-color: #fff;
+    color: #666;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px
+}
+
+form input[type="text"],
+form textarea {
+    width: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
