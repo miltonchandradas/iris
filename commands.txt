@@ -1,2 +1,4 @@
-docker build -t docker.io/miltonc/iris-model:01 .
-docker push docker.io/miltonc/iris-model:01
+docker build -t docker.io/miltonc/iris-model:02 .
+docker push docker.io/miltonc/iris-model:02
+
+aws s3 ls s3://hcp-901fd5ae-0a34-4ecf-9598-db28f5bfa794/example-dataset/house-price-toy/e961e14c8dd8ed74/irismodel/
