@@ -7,7 +7,7 @@ metadata:
     scenarios.ai.sap.com/name: "Milton Iris DataSet Classifier Server"
     executables.ai.sap.com/description: "Create online server to make live predictions"
     executables.ai.sap.com/name: "server"
-    artifacts.ai.sap.com/housepricemodel.kind: "model" # Suggest the kind of artifact to input.
+    artifacts.ai.sap.com/irismodel.kind: "model" # Suggest the kind of artifact to input.
   labels:
     scenarios.ai.sap.com/id: "milton-iris-classifier-server"
     ai.sap.com/version: "1.0"
